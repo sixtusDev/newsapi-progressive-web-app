@@ -1,0 +1,26 @@
+body, html {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.main-header {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background-color: teal;
+  margin-bottom: 36px;
+}
+
+.main-header h1 {
+  font-size: 2em;
+  margin: 0;
+  color: white;
+}
+
+.news-url{
+  text-decoration: none;
+}
+
+div.card-content p{
+  color: #000000;
+}

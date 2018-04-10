@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>News</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link href="/src/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="/src/css/app.css">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+<header class="main-header">
+  <h1>News</h1>
+</header>
+<article>
+  <div class="container">
+    <div class="input-field col s12">
+      <select class="source" id="select1">
+      </select>
+      <label>Browse News by Source</label>
+    </div>
+    <div class="input-field col s12">
+      <select class="country" id="select2">
+        <option value="" disabled selected>Select country</option>
+        <option value="ae">Argentina</option>
+        <option value="at">Austria</option>
+        <option value="au">Australia</option>
+        <option value="be">Belgium</option>
+        <option value="bg">Bulgeria</option>
+        <option value="br">Brazil</option>
+        <option value="ca">Canada</option>
+        <option value="ch">Switzerland</option>
+        <option value="cn">China</option>
+        <option value="co">Colombia</option>
+        <option value="cu">Cuba</option>
+        <option value="cz">Czech Republic</option>
+        <option value="de">Germany</option>
+        <option value="eg">Egypt</option>
+        <option value="fr">France</option>
+        <option value="gb">United Kingdom</option>
+        <option value="gr">Greece</option>
+        <option value="hk">Hong Kong</option>
+        <option value="hu">Hungary</option>
+        <option value="id">Indonesia</option>
+        <option value="ie">Ireland</option>
+        <option value="il">Israel</option>
+        <option value="in">India</option>
+        <option value="it">Italy</option>
+        <option value="jp">Japan</option>
+        <option value="kr">Korea</option>
+        <option value="lt">Lithuania</option>
+        <option value="lv">Latvia</option>
+        <option value="ma">Morocco</option>
+        <option value="mx">Mexico</option>
+        <option value="my">Malaysia</option>
+        <option value="ng">Nigeria</option>
+        <option value="nl">Neitherlands</option>
+        <option value="no">Norway</option>
+        <option value="nz">New Zealand</option>
+        <option value="ph">Philippines</option>
+        <option value="pl">Poland</option>
+        <option value="pt">Portugal</option>
+        <option value="ro">Romania</option>
+        <option value="rs">Serbia</option>
+        <option value="ru">Russian Federation</option>
+        <option value="sa">Saudi Arabia</option>
+        <option value="se">Sweden</option>
+        <option value="sg">Singapore</option>
+        <option value="si">Slovenia</option>
+        <option value="sk">Slovakia</option>
+        <option value="th">Thailand</option>
+        <option value="tr">Turkey</option>
+        <option value="tw">Taiwan</option>
+        <option value="ua">Ukraine</option>
+        <option value="us">USA</option>
+        <option value="ve">Venezuela</option>
+        <option value="za">South Africa</option>        
+      </select>
+      <label>Browse News by Country</label>
+    </div>
+    <main></main>
+  </div>
+</article>
+<script src="/src/js/jquery-3.3.1.js"></script>
+<script src="/src/js/materialize.js"></script>
+<script src="/src/js/init.js"></script>
+<script src="/src/js/idb.js"></script>
+<script src="/src/js/indexedDB.js"></script>
+<script src="/src/js/app.js"></script>
+<script>
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+</script>
+</body>
+</html>

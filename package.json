@@ -1,0 +1,17 @@
+{
+  "name": "news-pwa-app",
+  "version": "1.0.0",
+  "description": "A basic news api progressive web application",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 8080"
+  },
+  "keywords": [
+    "pwa"
+  ],
+  "author": "Sixtus Innocent",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
